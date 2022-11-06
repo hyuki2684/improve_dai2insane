@@ -1,5 +1,39 @@
 {
 "name" : "第2難易度表改造計画段位認定案",
 "symbol" : "▼",
-"data_url" : "https://script.google.com/macros/s/AKfycbxdTaJYKCUjJYjJTGKKzqIK-TFjYuZOCrqyvAeqgHXvoY1v5j_nbWpGhN0VmQPwmOG4gw/exec"
-}
+"data_url" : "https://script.google.com/macros/s/AKfycbxdTaJYKCUjJYjJTGKKzqIK-TFjYuZOCrqyvAeqgHXvoY1v5j_nbWpGhN0VmQPwmOG4gw/exec",
+"course":[
+{"name":"発狂入門A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d2d922aa6bcaeed61087d434b330c30e","689a2b8f998abcca07f8c9a2726b7cf1","b9c7bc62daea8f9ccd4502328d624486","20633634f25aabf3de779e6d42ee9764"]},
+{"name":"発狂入門B","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b9c7bc62daea8f9ccd4502328d624486","8bdc1d1fe654d75136173211f124ad70","d2d922aa6bcaeed61087d434b330c30e","7ed81895343bb928baaef5916c78f441"]},
+{"name":"発狂入門C","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d2d922aa6bcaeed61087d434b330c30e","20633634f25aabf3de779e6d42ee9764","ac0742b6db091fb76f08841056d0e4b8","9a6ead0eef3438ab35829bb1485b476b"]},
+{"name":"発狂入門D","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d2d922aa6bcaeed61087d434b330c30e","20633634f25aabf3de779e6d42ee9764","7ed81895343bb928baaef5916c78f441","ac0742b6db091fb76f08841056d0e4b8"]},
+{"name":"発狂入門E","constraint":["grade_mirror","gauge_lr2",""],"md5": ["35ee463f7df8fc03655bfd1abc5e35f7","1fcd8bd7cf3a0da978a0219b6e63ed38","4e767e62e087eabb9688b80b15975927","129977f225efc738096427789fe7763d"]},
+{"name":"発狂初段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9307db1c3f394fc5e54876ed3cef5523","973aa88c6e8082e4d096281238d9a3fe","c8e26c576fb9e81cb6fd16ca54283829","b557d259eb099d48813dc2d226afd7f5"]},
+{"name":"発狂初段B","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2490ada05c5054e74c62461a948417f1","973aa88c6e8082e4d096281238d9a3fe","fd8425255fbde9dd84e6db44ffb12329","18f23cd1ad1b0505aec5f9ae10c07600"]},
+{"name":"発狂初段C","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2490ada05c5054e74c62461a948417f1","37b22a7d4f7a93e6992633ad93e86345","73add22609ad1bc2f7a8437c591bade5","18f23cd1ad1b0505aec5f9ae10c07600"]},
+{"name":"発狂初段D","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2490ada05c5054e74c62461a948417f1","973aa88c6e8082e4d096281238d9a3fe","c8e26c576fb9e81cb6fd16ca54283829","18f23cd1ad1b0505aec5f9ae10c07600"]},
+{"name":"発狂初段E","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a49868a3e1c9eb580967c67d96a07e10","45b4a934c94a5911984f1c2962952fa9","c8e26c576fb9e81cb6fd16ca54283829","9b9998df80cf2b21e82d91e17ef119b2"]},
+{"name":"発狂二段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d08e1a937c5080104daa29c79c407075","88c4c8d6527d0a856f227a58c938f2a3","28b6aa98a0a42b236425efbd8861fac3","2601ba51434c11a28a6ac61a23e1c25b"]},
+{"name":"発狂二段B","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d08e1a937c5080104daa29c79c407075","af5ad349525295415ae6c132e8445159","350967ddf2e5038d742a6a311b9982da","e491463beb5a09cf8e3b6b876e281c16"]},
+{"name":"発狂二段C","constraint":["grade_mirror","gauge_lr2",""],"md5": ["8d6cb28cd80ab924c41f5141ed852326","4313da427b2f160d37b7165932d2e375","032401f30d2c7f1f764d106fb3842301","eb9439bd4d6e1f8af4bcf25cfb6b175d"]},
+{"name":"発狂二段D","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a0089276fd61b1fa848aaa323f0e420e","c640d13b90a2021827d82ebd0729269b","a025de6f81e79a6d965e9a590ecd9e1c","3667b70f9c6608218ed4ba2a972bd748"]},
+{"name":"発狂三段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c18135a013ecfb05e6afad56fda78396","8509d5501de203ef331898ae442a5d26","4c11405a191dfd9b5410fda5b646f863","a1fc8f39becc3b3ee381a800b624b809"]},
+{"name":"発狂三段B","constraint":["grade_mirror","gauge_lr2",""],"md5": ["3667b70f9c6608218ed4ba2a972bd748","85b09dc64fcc1bab971fb201d46bb97a","9350775a23e0dcbdc06f9380426fb1a6","14ae20332e62ab0b46565bf6b8171850"]},
+{"name":"発狂四段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["da57a6057b33da462d3037708341a997","2a9e168d47252b0b6f96c83c0805ede0","70715cc699c70b80ce730efdb3a5b794","3583817bdba718813212db4e6a806344"]},
+{"name":"発狂五段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2eb605976b976ced1f9a39a6b9546ec2","863c72f3eee166325db9c77900bbce9e","47045de25d9d2f9d7a36fec1fa6b86af","d69d4f8b5183ede4c383d57241f16ba8"]},
+{"name":"発狂五段B","constraint":["grade_mirror","gauge_lr2",""],"md5": ["011c0147f43fd1a84196782ccd88c203","bb9b729f5c17509206fd5e2ac5b7d713","f8c3258364bf06c596a6befdae61530d","018d4ec84c4b30a19dbd2df7f77cba5b"]},
+{"name":"発狂五段C","constraint":["grade_mirror","gauge_lr2",""],"md5": ["011c0147f43fd1a84196782ccd88c203","6cd18b84ad51cef1328124ece01fdcc5","de1f9baa74bb6fe87f74c6bd9430f5c0","f8c3258364bf06c596a6befdae61530d"]},
+{"name":"発狂五段D","constraint":["grade_mirror","gauge_lr2",""],"md5": ["011c0147f43fd1a84196782ccd88c203","6cd18b84ad51cef1328124ece01fdcc5","fac813cf950774ad582849c7d1943655","f8c3258364bf06c596a6befdae61530d"]},
+{"name":"発狂六段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ff7a7e547b543732c4b19c9e028a5331","1834e440eb1574429d84354807389809","d69d4f8b5183ede4c383d57241f16ba8","6391c83fb4177e30ccc58496432d39e6"]},
+{"name":"発狂七段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cf872b2c69d451e5c31b59ee49b38661","56ef487b38517cae523b4720d6898dd3","7988b71d4ad70da77839da15abc347c6","166c4a11b18268d2b39a7ac88a1bcc74"]},
+{"name":"発狂八段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["5aa0517a13933707497024a8bb54100c","83569c8569eea8bb866d51cf4dd23585","5f4eac4c5f1db4e86b43f846bf6476f4","f649c932d7df6ba14f3c7c4ef69cce4e"]},
+{"name":"発狂八段B","constraint":["grade_mirror","gauge_lr2",""],"md5": ["5aa0517a13933707497024a8bb54100c","eb2528879be2b76b68f0f3c1a658a0d9","a28676c6c74f68fbe6cd72574de784ba","8a951fe8b599a85430740b62db452aaa"]},
+{"name":"発狂八段C","constraint":["grade_mirror","gauge_lr2",""],"md5": ["582c2715ca7ce2f0513fecdc3edeb5c4","549b43da5b0dbd71599f353beccd81e1","fc0e584d68ed54c20b9626f5a79483f2","14d10bd8b5666cbd6dfde607ec2838af"]},
+{"name":"発狂八段D","constraint":["grade_mirror","gauge_lr2",""],"md5": ["5aa0517a13933707497024a8bb54100c","549b43da5b0dbd71599f353beccd81e1","30dda2d1a9c99c211ad0bbade0e498d5","14d10bd8b5666cbd6dfde607ec2838af"]},
+{"name":"発狂八段E","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a28676c6c74f68fbe6cd72574de784ba","549b43da5b0dbd71599f353beccd81e1","30dda2d1a9c99c211ad0bbade0e498d5","f34cfb3e9a1a5f87499d4a09e9dacfdc"]},
+{"name":"発狂九段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f1ac6350ac2620a7fb5563febb53116a","820dcd27c7959570c289da9e0dd87a6a","f649c932d7df6ba14f3c7c4ef69cce4e","0653005df6ff311390084e0e4051d5bd"]},
+{"name":"発狂十段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d4a1b4ad0f0bfd5681b7b0ccc012bed5","93bfccb37e1a3b1f44bc341383d08eb6","9bf55882fa4a1762bfb927f2731dbb13","72eb962296d74fa32fa0dd32a17369e8"]},
+{"name":"発狂皆伝A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d9b35d308bbd4a7733769d48fc836a03","a9028508eabc2372c58b24286dd2659c","cb439c3f276d9f8aa1dfb29f315936ad","799cf85057ae5bf2b93ebfecc322eff7"]}
+  
+  
+]}
