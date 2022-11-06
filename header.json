@@ -1,7 +1,7 @@
 {
 "name" : "第2難易度表改造計画段位認定案",
 "symbol" : "▼",
-"data_url" : "./score.json","level_order",
+"data_url" : "./score.json",
 "level_order" : 0,"0-",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
 "course":[
 {"name":"発狂入門A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d2d922aa6bcaeed61087d434b330c30e","689a2b8f998abcca07f8c9a2726b7cf1","b9c7bc62daea8f9ccd4502328d624486","20633634f25aabf3de779e6d42ee9764"]},
