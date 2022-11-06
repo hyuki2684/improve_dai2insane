@@ -1,5 +1,6 @@
 {
-"name" : "hyuki譜面一覧",
-"symbol" : "obj:hyuki",
-"data_url" : "https://script.google.com/macros/s/AKfycbwDrJm3LNJapSUOL89xOZHnX51HAdQrbS3BPf_F_Q1OWRAS7bYeNwoEuQO6v1zScjC6/exec"
+"name" : "第2難易度表改造計画段位認定案",
+"symbol" : "▼",
+"data_url" : "https://github.com/hyuki2684/improve_dai2insane/blob/master/score.json",
+"level_order" : 0,"0-",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
 }
