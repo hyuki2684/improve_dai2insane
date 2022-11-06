@@ -28,4 +28,4 @@
 {"name":"発狂八段E","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a28676c6c74f68fbe6cd72574de784ba","549b43da5b0dbd71599f353beccd81e1","30dda2d1a9c99c211ad0bbade0e498d5","f34cfb3e9a1a5f87499d4a09e9dacfdc"]},
 {"name":"発狂九段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f1ac6350ac2620a7fb5563febb53116a","820dcd27c7959570c289da9e0dd87a6a","f649c932d7df6ba14f3c7c4ef69cce4e","0653005df6ff311390084e0e4051d5bd"]},
 {"name":"発狂十段A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d4a1b4ad0f0bfd5681b7b0ccc012bed5","93bfccb37e1a3b1f44bc341383d08eb6","9bf55882fa4a1762bfb927f2731dbb13","72eb962296d74fa32fa0dd32a17369e8"]},
-{"name":"発狂皆伝A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d9b35d308bbd4a7733769d48fc836a03","a9028508eabc2372c58b24286dd2659c","cb439c3f276d9f8aa1dfb29f315936ad","799cf85057ae5bf2b93ebfecc322eff7"]},
+{"name":"発狂皆伝A","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d9b35d308bbd4a7733769d48fc836a03","a9028508eabc2372c58b24286dd2659c","cb439c3f276d9f8aa1dfb29f315936ad","799cf85057ae5bf2b93ebfecc322eff7"]}
