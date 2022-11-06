@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>hyuki譜面一覧</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bmstable" content="header.json" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <header class="mb-3">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">hyuki譜面一覧</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="alert alert-success mb-3" role="alert">
+            <p>私hyukiが作った譜面をまとめた表です。次期難易度表フォーマット対応。</p>
+            <p>難易度表の読み込みと表示に数秒かかります。</p>
+            <hr>
+            <p class="mb-0">管理人：hyuki</p>
+        </div>
+
+
+        <!--ここから難易度表本体-->
+        <div>
+            <table class="table table-light table-striped table-hover" id="table_int">
+            </table>
+        </div>
+        <script language="javascript" type="text/javascript">
+            $(document).ready(function () {
+                $.getJSON($("meta[name=bmstable]").attr("content"), function (header) {
+                    $.getJSON(header.data_url, function (information) {
+                        makeBMSTable(information, header.symbol);
+                    });
+                });
+            });
+
+            function makeBMSTable(info, mark) {
+                var x = "";
+                var ev = "";
+                var count = 0;
+                var obj = $("#table_int");
+
+                obj.html("");
+                $("<thead class='table-dark'><tr><th>Level</th><th>曲名</th><th>アーティスト</th>><th>差分</th><th>コメント</th></tr></thead><tbody>")
+                    .appendTo(obj);
+                var obj_sep = null;
+                for (var i = 0; i < info.length; i++) {
+                    if (x != info[i].level) {
+                        if (obj_sep != null) {
+                            obj_sep.html("<td colspan='5'>" + "<b>" + mark + x + " (" + count +
+                                "譜面)</b></td>");
+                        }
+                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
+                            "'></tr>");
+                        obj_sep.appendTo(obj);
+                        count = 0;
+                        x = info[i].level;
+                    }
+
+                    var str = $("<tr></tr>");
+
+                    // Level
+                    $("<td width='15%'>" + mark + x + "</td>").appendTo(str);
+
+                    // Title
+                    if (info[i].md5 != "" && info[i].md5 != null) {
+                        $("<td width='25%'>" +
+                            "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i]
+                            .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+                    }
+                    else{
+                        $("<td width='25%'>" +
+                            "<a href='https://mocha-repository.info/song.php?sha256=" + info[i]
+                            .sha256 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+                    }
+
+                    // アーティスト
+                    var astr = "";
+                    if (info[i].url != "" && info[i].url != null) {
+                        if (info[i].artist != "" && info[i].artist != null) {
+                            astr = "<a href='" + info[i].url + "'>" + info[i].artist + "</a>";
+                        } else {
+                            astr = "<a href='" + info[i].url + "'>" + info[i].url + "</a>";
+                        }
+                    } else {
+                        if (info[i].artist != "" && info[i].artist != null) {
+                            astr = info[i].artist;
+                        }
+                    }
+                    if (info[i].url_pack != "" && info[i].url_pack != null) {
+                        if (info[i].name_pack != "" && info[i].name_pack != null) {
+                            astr += "<br />(<a href='" + info[i].url_pack + "'>" + info[i].name_pack + "</a>)";
+                        } else {
+                            astr += "<br />(<a href='" + info[i].url_pack + "'>" + info[i].url_pack + "</a>)";
+                        }
+                    } else {
+                        if (info[i].name_pack != "" && info[i].name_pack != null) {
+                            astr += "<br />(" + info[i].name_pack + ")";
+                        }
+                    }
+                    $("<td width='15%'>" + astr + "</td>").appendTo(str);
+                    // 差分
+                    if (info[i].url_diff != "" && info[i].url_diff != null) {
+                        if (info[i].name_diff != "" && info[i].name_diff != null) {
+                            $("<td width='15%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
+                        } else {
+                            $("<td width='15%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
+                        }
+                    } else {
+                        if (info[i].name_diff != "" && info[i].name_diff != null) {
+                            $("<td width='15%'>" + info[i].name_diff + "</td>").appendTo(str);
+                        } else {
+                            $("<td width='15%'></td>").appendTo(str);
+                        }
+                    }
+
+                    // Comment
+                    $("<td width='30%'>" + info[i].comment + "</td>").appendTo(str);
+                    str.appendTo(obj);
+                    count++;
+
+                }
+                $("</tbody>").appendTo(obj);
+
+                if (obj_sep != null) {
+                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='5'>" + "<b>" + mark + x +
+                        " (" + count + "譜面)</b></td>");
+                }
+            }
+        </script>
+    </div>
+
+</html>
